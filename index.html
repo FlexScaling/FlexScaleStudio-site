@@ -18,6 +18,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      border-bottom: 2px solid #d92027;
     }
     nav a {
       color: #fff;
@@ -28,6 +29,13 @@
     header {
       text-align: center;
       padding: 5em 2em;
+      background: url('https://images.unsplash.com/photo-1549294413-26f195200c9c?auto=format&fit=crop&w=1470&q=80') no-repeat center center;
+      background-size: cover;
+      color: #fff;
+    }
+    header h1 {
+      color: #fff;
+      text-shadow: 1px 1px 3px #000;
     }
     section {
       padding: 3em 2em;
@@ -36,19 +44,32 @@
       background: #222;
       padding: 2em;
       margin-top: 2em;
+      border-left: 5px solid #d92027;
       border-radius: 8px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1em;
+      margin-top: 2em;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #000;
     }
     footer {
       text-align: center;
       padding: 2em;
       background: #1e1e1e;
       color: #aaa;
+      border-top: 2px solid #d92027;
     }
   </style>
 </head>
 <body>
   <nav>
-    <div><strong>FlexScale Studio</strong></div>
+    <div><strong style="color:#d92027;">FlexScale Studio</strong></div>
     <div>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -61,15 +82,21 @@
     <p>Helping real people grow real businesses.</p>
   </header>
   <section>
-    <h2>Why Choose Us?</h2>
+    <h2 style="color:#d92027;">Why Choose Us?</h2>
     <p>We get it — you're not trying to waste time or money. We're straight to the point, and focused on growth. We help clothing brands build out a real presence, run ads that convert, and build systems that actually scale your income.</p>
-
+    
     <div class="growth">
       <h3>What's Possible?</h3>
       <p>Let’s say your product sells for $40. If we help you get in front of 10,000 people with a 2% conversion rate, that’s 200 sales.</p>
       <p>200 sales x $40 = <strong>$8,000</strong>. That could happen in one week.</p>
       <p>Now imagine that happening every week — that's $32,000/month.</p>
       <p>This isn’t a dream — it’s strategy. And that’s what we do.</p>
+    </div>
+
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1594633312681-f43b62f9db4c?auto=format&fit=crop&w=1470&q=80" alt="Branding Example" />
+      <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1470&q=80" alt="Creative Ad" />
+      <img src="https://images.unsplash.com/photo-1624111185336-f7f6b3c112f1?auto=format&fit=crop&w=1470&q=80" alt="Storefront Design" />
     </div>
   </section>
   <footer>
