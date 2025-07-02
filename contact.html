@@ -11,6 +11,10 @@
     form { max-width: 500px; margin: 2em auto; display: flex; flex-direction: column; gap: 1em; }
     input, textarea { padding: 0.7em; border: none; border-radius: 5px; font-size: 1em; }
     button { padding: 0.7em; background-color: #1e90ff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    a { color: #1e90ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .contact-info { max-width: 500px; margin: 2em auto; text-align: center; }
+    .contact-info p { margin: 0.5em 0; }
   </style>
 </head>
 <body>
@@ -22,13 +26,20 @@
   </nav>
   <section>
     <h1>Contact Us</h1>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="5" placeholder="Your Message" required></textarea>
+    <form action="https://formspree.io/f/mgvyrydp" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="_replyto" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <input type="text" name="_gotcha" style="display:none" />
       <button type="submit">Send Message</button>
     </form>
     <p style="text-align:center;">We'll get back to you ASAP.</p>
+
+    <div class="contact-info">
+      <p>Email: <a href="mailto:flexscaling@gmail.com">flexscaling@gmail.com</a></p>
+      <p>Phone: <a href="tel:+15613171879">(561) 317-1879</a></p>
+      <p>Instagram: <a href="https://instagram.com/flxpr1me" target="_blank" rel="noopener">@flxpr1me</a></p>
+    </div>
   </section>
 </body>
 </html>
