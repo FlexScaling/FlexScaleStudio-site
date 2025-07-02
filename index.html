@@ -2,49 +2,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlexScale Studio</title>
-    <style>
-        body {
-            background: #0f0f0f;
-            color: #fff;
-            font-family: 'Arial', sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-        }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 0.2em;
-        }
-        p {
-            font-size: 1.3em;
-            color: #ccc;
-        }
-        .button {
-            margin-top: 2em;
-            padding: 0.7em 1.5em;
-            background-color: #1e90ff;
-            border: none;
-            color: white;
-            font-size: 1em;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.3s ease;
-        }
-        .button:hover {
-            background-color: #3ea0ff;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FlexScale Studio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+    }
+    nav {
+      background: #1e1e1e;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header {
+      text-align: center;
+      padding: 5em 2em;
+    }
+    section {
+      padding: 3em 2em;
+    }
+    .growth {
+      background: #222;
+      padding: 2em;
+      margin-top: 2em;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 2em;
+      background: #1e1e1e;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-    <h1>FlexScale Studio</h1>
-    <p>Brand Scaling for Ambitious Clothing Brands</p>
-    <button class="button">Let's Build</button>
+  <nav>
+    <div><strong>FlexScale Studio</strong></div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+  <header>
+    <h1>We Scale Clothing Brands</h1>
+    <p>Helping real people grow real businesses.</p>
+  </header>
+  <section>
+    <h2>Why Choose Us?</h2>
+    <p>We get it — you're not trying to waste time or money. We're straight to the point, and focused on growth. We help clothing brands build out a real presence, run ads that convert, and build systems that actually scale your income.</p>
+
+    <div class="growth">
+      <h3>What's Possible?</h3>
+      <p>Let’s say your product sells for $40. If we help you get in front of 10,000 people with a 2% conversion rate, that’s 200 sales.</p>
+      <p>200 sales x $40 = <strong>$8,000</strong>. That could happen in one week.</p>
+      <p>Now imagine that happening every week — that's $32,000/month.</p>
+      <p>This isn’t a dream — it’s strategy. And that’s what we do.</p>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 FlexScale Studio. Built to grow.
+  </footer>
 </body>
 </html>
